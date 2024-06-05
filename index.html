@@ -3,41 +3,129 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/public/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
 
   <title>Frontend Mentor | Art gallery website</title>
 </head>
 
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+
+  <section class="mb-32 md:mb-36 lg:mb-[400px]">
+
+    <div class="lg:flex lg:absolute">
+      <div class="lg:bg-almost-black lg:w-[450px] xl:w-[650px]"></div>
+      <picture>
+        <source media="(min-width:1024px)" srcset="/assets/desktop/image-hero.jpg">
+        <source media="(min-width:768px)" srcset="/assets/tablet/image-hero.jpg">
+        <source media="(min-width:425px)" srcset="/assets/mobile/image-hero@2x.jpg">
+
+        <img src="/assets/mobile/image-hero.jpg" alt="" class="mb-8 md:absolute md:-z-10 lg:relative lg:m-0">
+      </picture>
+    </div>
+
+    <div class="wrapper">
+      <div
+        class="flex flex-col gap-8 max-w-[57ch] md:relative md:py-36 md:ml-auto lg:flex-row lg:ml-0 lg:justify-between lg:max-w-[100%] lg:pt-48">
+        <h1 class="heading heading-xl text-balance lg:after:pl-5 lg:block lg:mix-blend-difference lg:invert">MODERN
+          ART GALLERY</h1>
+        <div class="flex flex-col gap-8 lg:max-w-[60ch]">
+          <p class="body-text body-text-md">The arts in the collection of the Modern Art Gallery all started
+            from a spark of inspiration. Will these pieces inspire you? Visit
+            us and find out.</p>
+          <a href="/location.html" class="uppercase inline-flex ">
+            <span class=" bg-almost-black text-white py-5 px-8 text-xl tracking-[3.64px]">
+              our location
+            </span>
+            <div class="bg-gold px-6 py-5">
+              <img src="/assets/icon-arrow-right.svg" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="wrapper">
+    <section class="mb-32">
+      <div class="flex flex-col md:flex-row-reverse md:gap-16 md:items-center md:mb-3 lg:gap-40">
+        <div class="md:basis-full">
+          <picture>
+            <source media="(min-width:1024px)" srcset="/assets/desktop/image-grid-1@2x.jpg">
+            <source media="(min-width:768px)" srcset="/assets/tablet/image-grid-1@2x.jpg">
+            <source media="(min-width:375px)" srcset="/assets/mobile/image-grid-1@2x.jpg">
+            <img src="/assets/tablet/image-grid-1@2x.jpg" alt="" class="">
+          </picture>
+        </div>
+        <div class="md:max-w-[40ch] lg:max-w-[60ch]">
+          <h2 class="heading heading-md text-balance mb-5">Your Day <br>
+            at the Gallery</h2>
+          <p class="body-text body-text-md">Wander through our distinct collections and find new insights about
+            our artists. Dive into the details of their creative process.</p>
+        </div>
+      </div>
+      <div class="grid gap-3 md:grid-cols-[3fr_2fr] md:grid-rows-[1fr_1fr]">
+        <div class="md:row-span-full">
+          <picture>
+            <source media="(min-width:1024px)" srcset="/assets/desktop/image-grid-2@2x.jpg">
+            <source media="(min-width:768px)" srcset="/assets/tablet/image-grid-2@2x.jpg">
+            <source media="(min-width:375px)" srcset="/assets/mobile/image-grid-2@2x.jpg">
+            <img src="/assets/mobile/image-grid-2@2x.jpg" alt="" class="w-full h-full object-cover">
+          </picture>
+        </div>
+        <div class="md:row-start-1 md:row-end-2">
+          <picture>
+            <source media="(min-width:1024px)" srcset="/assets/desktop/image-grid-3@2x.jpg">
+            <source media="(min-width:768px)" srcset="/assets/tablet/image-grid-3@2x.jpg">
+            <source media="(min-width:375px)" srcset="/assets/mobile/image-grid-3@2x.jpg">
+            <img src="/assets/mobile/image-grid-3@2x.jpg" alt="" class="w-full h-full object-cover">
+          </picture>
+        </div>
+        <div class="bg-almost-black py-12 px-6 flex flex-col gap-6 md:row-start-2 md:row-end-3 md:py-20 md:px-7 ">
+          <h2 class="heading heading-md text-balance text-white">Come &amp; be inspired</h2>
+          <p class="body-text body-text-sm text-white opacity-80">We’re excited to welcome you to our gallery and see
+            how our
+            collections influence you.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="bg-almost-black">
+    <div class="wrapper  flex flex-col gap-9 py-12 md:flex-row md:py-14 lg:py-20">
+      <div class="md:flex-1">
+        <img src="/assets/logo-light.svg" alt="">
+      </div>
+      <p class="body-text body-text-sm  text-white opacity-80 md:basis-2/5">The Modern Art Gallery is free to all
+        visitors
+        and open
+        seven days a
+        week
+        from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
+
+      <div class="flex gap-5 md:flex-1 md:justify-end">
+        <div>
+          <img src="/assets/icon-facebook.svg" alt="">
+        </div>
+        <div>
+          <img src="/assets/icon-instagram.svg" alt="">
+        </div>
+        <div>
+          <img src="/assets/icon-twitter.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
 </html>
-
-<!-- Modern Art Gallery
-
-The arts in the collection of the Modern Art Gallery all started
-from a spark of inspiration. Will these pieces inspire you? Visit
-us and find out.
-
-Our location
-
-Your day at the gallery
-
-Wander through our distinct collections and find new insights about
-our artists. Dive into the details of their creative process.
-
-Come &amp; be inspired
-
-We’re excited to welcome you to our gallery and see how our collections
-influence you.
-
-Modern Art Gallery
-
-The Modern Art Gallery is free to all visitors and open seven days a week
-from 8am to 9pm. Find us at 99 King Street, Newport, USA. -->

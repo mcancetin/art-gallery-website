@@ -5,30 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>Frontend Mentor | Art gallery website</title>
 </head>
 
 <body>
+    <div class="md:wrapper">
+        <a href="/index.html" class="uppercase inline-flex absolute z-10 ">
+            <div class="bg-gold px-6 py-5">
+                <img src="/assets/icon-arrow-left.svg" alt="">
+            </div>
+            <span class=" bg-almost-black text-white py-5 px-8 text-xl tracking-[3.64px]">
+                Back to Home
+            </span>
+        </a>
+    </div>
 
-    Back to Home
+    <div class="relative">
+        <picture>
+            <source media="(min-width:820px)" srcset="/assets/desktop/image-map@2x.png">
+            <source media="(min-width:470px)" srcset="/assets/tablet/image-map@2x.png">
+            <source media="(min-width:375px)" srcset="/assets/mobile/image-map@2x.png">
 
-    Our location
+            <img src="/assets/mobile/image-map@2x.png" alt="">
+        </picture>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-black/40"></div>
+    </div>
 
-    99 King Street
-    Newport
-    RI 02840
-    United States of America
+    <div class=" bg-almost-black pt-12 pb-14 md:py-20 lg:pt-[104px] lg:pb-32">
+        <div class="flex flex-col wrapper md:flex-row md:justify-between md:gap-28 lg:gap-64">
+            <h1 class="heading heading-lg text-white mb-12">Our Location</h1>
+            <div class="flex flex-col gap-5">
+                <h4 class="heading heading-sm text-gold">99 King Street</h4>
+                <p class="body-text body-text-md text-white opacity-80">
+                    Newport <br>
+                    RI 02840 <br>
+                    United States of America</p>
 
-    Our newly opened gallery is located near the Edward King House on 99 King
-    Street, the Modern Art Gallery is free to all visitors and open seven days
-    a week from 8am to 9pm.
+                <p class="body-text body-text-md text-white opacity-80">Our newly opened gallery is located near the
+                    Edward
+                    King
+                    House on 99
+                    King
+                    Street, the Modern Art Gallery is free to all visitors and open seven days
+                    a week from 8am to 9pm.</p>
+            </div>
 
-    Modern Art Gallery
+        </div>
+    </div>
 
-    The Modern Art Gallery is free to all visitors and open seven days a week
-    from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+    <footer class=" bg-gold">
+        <div class="wrapper  flex flex-col gap-9 py-12 md:flex-row md:py-14 lg:py-20">
+            <div class="md:flex-1">
+                <img src="/assets/logo-dark.svg" alt="">
+            </div>
+            <p class="body-text body-text-sm text-almost-black md:basis-2/5">The Modern Art Gallery is free to all
+                visitors
+                and open
+                seven days a
+                week
+                from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
 
+            <div class="flex gap-5 md:flex-1 md:justify-end">
+                <div>
+                    <img src="/assets/icon-facebook.svg" alt="">
+                </div>
+                <div>
+                    <img src="/assets/icon-instagram.svg" alt="">
+                </div>
+                <div>
+                    <img src="/assets/icon-twitter.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
